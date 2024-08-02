@@ -17,7 +17,7 @@ export default function Calculator() {
 
   const calculateResult = () => {
     try {
-      setResult(eval(input)); // Note: using eval can be dangerous. This is for simplicity only.
+      setResult(eval(input)); 
     } catch (error) {
       setResult('Error');
     }
