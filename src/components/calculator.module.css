@@ -10,7 +10,10 @@
   border-radius: 10px;
   padding: 20px;
   background-color: #f9f9f9;
-  border: 2px solid #0070f3;
+  width: 400px;
+  align-items: center;
+  margin-left: 35%;
+  
 }
 
 .display {
@@ -42,8 +45,11 @@
   color: white; 
   border: none; 
   transition: background-color 0.3s; 
+  border: 2px solid #0b40a1;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .button:hover {
   background-color: #005bb5; 
+  border-color: #003f7f;
 }
