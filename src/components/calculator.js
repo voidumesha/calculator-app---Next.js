@@ -1,4 +1,6 @@
+// src/components/Calculator.js
 import { useState } from 'react';
+import styles from './calculator.module.css';
 
 export default function Calculator() {
   const [input, setInput] = useState('');
@@ -22,12 +24,12 @@ export default function Calculator() {
   };
 
   return (
-    <div style={styles.container}>
-      <div style={styles.display}>
+    <div className={styles.container}>
+      <div className={styles.display}>
         <div>{input}</div>
         <div>{result}</div>
       </div>
-      <div style={styles.buttons}>
+      <div className={styles.buttons}>
         <button onClick={() => handleClick('1')}>1</button>
         <button onClick={() => handleClick('2')}>2</button>
         <button onClick={() => handleClick('3')}>3</button>
@@ -83,4 +85,3 @@ const styles = {
     borderRadius: '10px',
   },
 };
-    
